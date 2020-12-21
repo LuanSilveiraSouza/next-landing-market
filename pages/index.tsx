@@ -1,7 +1,15 @@
+import Link from 'next/link';
+
 export default function Home() {
-  return (
-    <div className='container flex flex-1 justify-center mx-auto px-4'>
-      <h1 className='text-9xl'>Hello world!!!</h1>
-    </div>
-  )
+	return (
+		<div className='flex flex-1 justify-center'>
+			<h1 className='text-4xl md:text-9xl'>Hello world!!!</h1>
+
+			<a href='/about'>HTML Link</a>
+
+			<Link href='/about'>
+				<a>HTML Link</a>
+			</Link>
+		</div>
+	);
 }
