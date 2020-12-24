@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   padding: 0;
@@ -15,8 +21,24 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFF;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FDCD21;
+  transition: all 0.3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FED84B;
+}
+

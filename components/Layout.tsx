@@ -1,13 +1,13 @@
 import Navbar from './Navbar';
 
 const Layout: React.FC = ({ children }) => {
-    return (
-        <div className='flex flex-1 flex-col'>
-            <Navbar />
+	return (
+		<div className='flex flex-1 flex-col min-h-screen'>
+			<Navbar />
 
-            {children}
-        </div>
-    )
-}
+			<div className='flex flex-1 flex-col mt-24 mb-16 px-4'>{children}</div>
+		</div>
+	);
+};
 
 export default Layout;
