@@ -1,15 +1,20 @@
-import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
 	return (
 		<div className='flex flex-1 flex-col justify-center'>
-			<h1 className='text-4xl min-h-screen'>Hello world!!!</h1>
+			<section className='relative flex justify-center items-center h-screen w-full'>
+				<Image
+					src='/images/market2.jpg'
+					alt='Mercado'
+					layout='fill'
+					quality={100}
+				/>
 
-			<a href='/about'>HTML Link</a>
-
-			<Link href='/about'>
-				<a>HTML Link</a>
-			</Link>
+				<div className='absolute inset-0 h-full w-full bg-black bg-opacity-60 text-white flex flex-col justify-center items-center'>
+					<h1 className='text-6xl'>Landing Market</h1>
+				</div>
+			</section>
 		</div>
 	);
 }

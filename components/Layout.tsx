@@ -6,7 +6,7 @@ const Layout: React.FC = ({ children }) => {
 		<div className='flex flex-1 flex-col min-h-screen'>
 			<NavBar />
 
-			<div className='flex flex-1 flex-col mt-24 mb-16 px-4'>{children}</div>
+			<div className='flex flex-1 flex-col mt-20 mb-16'>{children}</div>
 
 			<Footer />
 		</div>

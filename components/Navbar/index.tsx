@@ -8,13 +8,13 @@ const NavBar: React.FC = () => {
 	const [showMenu, setShowMenu] = useState<boolean>(false);
 
 	return (
-		<div className='fixed w-full h-20'>
+		<div className='fixed w-full h-20 z-20'>
 			<div className='flex justify-between items-center px-4 md:px-8 bg-primary-yellow h-20'>
 				<div className='flex justify-between items-center w-48'>
 					<FiShoppingCart className='text-xl' />
 
 					<Link href='/'>
-						<h1 className='text-xl text-black break-words cursor-pointer'>
+						<h1 className='font-bold text-xl text-black break-words cursor-pointer'>
 							Landing Market
 						</h1>
 					</Link>

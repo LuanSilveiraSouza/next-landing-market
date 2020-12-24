@@ -8,7 +8,7 @@ interface NavLinkProps {
 const NavLink: React.FC<NavLinkProps> = ({ path, label }) => {
 	return (
 		<Link href={path}>
-			<a className='flex aligm-center justify-center w-20 md:w-36 mx-2 p-4 hover:bg-secundary-yellow hover:underline transition-colors duration-200 ease-linear cursor-pointer'>
+			<a className='flex items-center justify-center w-20 md:w-36 mx-2 p-4 hover:bg-secundary-yellow hover:underline hover:shadow-lg transition-all duration-200 ease-linear cursor-pointer text-md'>
 				{label}
 			</a>
 		</Link>
